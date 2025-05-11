@@ -1,9 +1,3 @@
-//
-//  Colors.swift
-//  Calculator_ver3
-//
-//  Created by MIKHAIL ZHACHKO on 9.12.23.
-//
 
 import SwiftUI
 

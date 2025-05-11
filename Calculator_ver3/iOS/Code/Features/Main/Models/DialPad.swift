@@ -1,15 +1,9 @@
-//
-//  NumPad.swift
-//  Calculator_ver3
-//
-//  Created by MIKHAIL ZHACHKO on 9.12.23.
-//
 
 import Foundation
 
 enum DialPad: String {
     
-//    MARK: Numbers
+    //    MARK: Numbers
     case one        = "1"
     case two        = "2"
     case three      = "3"
@@ -20,7 +14,7 @@ enum DialPad: String {
     case eight      = "8"
     case nine       = "9"
     case zero       = "0"
-//    MARK: Operations
+    //    MARK: Operations
     case add        = "+"
     case subtract   = "-"
     case multiply   = "×"
@@ -32,22 +26,14 @@ enum DialPad: String {
     case negative   = "+/-"
     case revert     = "∅"
     
-//    MARK: - Functions
+    //    MARK: - Functions
     func getOperator() -> String {
-        switch self {
-        
-        case .add:
-            return "+"
-        case .subtract:
-            return "-"
-        case .multiply:
-            return "*"
-        case .divide:
-            return "."
-        default:
-            return ""
-        }
+      switch self {
+      case .add:      return Operations.plus.rawValue    
+      case .subtract: return Operations.minus.rawValue   
+      case .multiply: return Operations.multiply.rawValue
+      case .divide:   return Operations.divide.rawValue  
+      default:        return ""
+      }
     }
-    
-    
 }
