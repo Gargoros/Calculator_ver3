@@ -1,21 +1,13 @@
-//
-//  DisplayView.swift
-//  Calculator_ver3
-//
-//  Created by MIKHAIL ZHACHKO on 9.12.23.
-//
 
 import SwiftUI
 
 struct DisplayView: View {
-//    MARK: - Variables
+    //MARK: - Variables
     @EnvironmentObject var mainViewModel: MainViewModel
-    
     let height: CGFloat
     let colorScheme: ColorScheme
     let duration: TimeInterval
-    
-//    MARK: - Views
+    //MARK: - Views
     var body: some View {
         ZStack(){
             //MARK: Display shape
@@ -62,19 +54,9 @@ struct DisplayView: View {
                         .lineLimit(1)
                         .animation(.easeInOut(duration: duration), value: self.mainViewModel.result)
                         .animation(.default, value: self.mainViewModel.result.isEmpty)
-                        
                 }
                 .padding(.horizontal, 24)
             }
         }
     }
-}
-
-#Preview {
-    DisplayView(
-        height: 818,
-        colorScheme: .light,
-        duration: 0.3)
-    .padding(12)
-    .environmentObject(MainViewModel())
 }

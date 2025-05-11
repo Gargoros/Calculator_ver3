@@ -1,9 +1,3 @@
-//
-//  Operation.swift
-//  Calculator_ver3
-//
-//  Created by MIKHAIL ZHACHKO on 9.12.23.
-//
 
 import Foundation
 
@@ -12,9 +6,9 @@ import Foundation
 enum Operations: String {
     case plus       = "+"
     case minus      = "-"
-    case multiply   = "*"  // change that symbol
-    case divide     = "/"  // change that symbol
-    case plusMinus  = "+-" // change that symbol
+    case multiply   = "*"
+    case divide     = "/"
+    case plusMinus  = "+-"
     case percentage = "%"
     case unknown    = ""
 }

@@ -1,20 +1,11 @@
-//
-//  CalculatorButtons.swift
-//  Calculator_ver3
-//
-//  Created by MIKHAIL ZHACHKO on 11.12.23.
-//
 
 import SwiftUI
 
 struct CalculatorButtons: View {
-//    MARK: - Variables
+//MARK: - Variables
     @EnvironmentObject var mainViewModel: MainViewModel
-    
     var stackSpacing: CGFloat = 0
-    
-    
-//    MARK: - Views
+//MARK: - Views
     var body: some View {
         VStack(alignment: .leading, spacing: stackSpacing - 4){
             Spacer()
@@ -48,16 +39,8 @@ struct CalculatorButtons: View {
                     CalculatorPad(dialPad: .decimal)
                     CalculatorPad(dialPad: .equal, color: .orange)
                 }
-                
             }
         }
         .environmentObject(mainViewModel)
     }
-}
-
-#Preview {
-    CalculatorButtons(stackSpacing: 24)
-        .frame(height: 450)
-        .padding(24)
-        .environmentObject(MainViewModel())
 }
