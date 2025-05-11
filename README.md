@@ -9,7 +9,7 @@ Simple Calculator with MVVM
     style="margin-right:10px;"
   />
   <img
-    src="https://raw.githubusercontent.com/Gargoros/Calculator_ver3/main/Screenshots/calc_01.png"
+    src="https://raw.githubusercontent.com/Gargoros/Calculator_ver3/main/Screenshots/calc_02.png"
     alt="Simulator Screenshot 2"
     width="200" height="450"
     style="margin-right:10px;"
